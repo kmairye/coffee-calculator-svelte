@@ -1,0 +1,194 @@
+/*#################### Variables ####################*/
+:root {
+	--textPrimary: #111111;
+	--textLight: #aaaaaa;
+	--textContrastLight: #EBD692;
+	--textContrast: #dcb22a;
+	--textError: #d3777d;
+	--bodyBg: #FFFFFF;
+	--bpSmall: 24em;
+	--bpMedium: 46.8em;
+	--bpLarge: 50em;
+	--bpXlarge: 73em;
+}
+
+
+/*#################### General styles ####################*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html {
+	font-size: 15px;
+	font-weight: 400;
+}
+body {
+	font-family: 'Montserrat', sans-serif;	
+	color: var(--textPrimary);
+	background-color: var(--bodyBg);
+}
+svg {
+	max-height: 1.4rem;
+}
+
+
+/* Utilites */
+.card {
+	background-color: #FFF;
+	box-shadow: 0px 3px 6px #AAA;
+	border-radius: 8px;
+	transition: all .2s ease;
+}
+.card:hover {
+	box-shadow: 0px 3px 16px #AAA;
+	cursor: pointer;
+}
+button.button, input {
+	border-radius: 8px;
+}
+input {
+	height: 45px;
+	text-indent: 10px;
+	outline: 0;
+	border: 0;
+}
+.input.light {
+	background-color: var(--textLight);
+	border: 0;
+}
+.input.white {
+	background-color: #FFF;
+	border: 1px solid var(--textLight);
+}
+.button {
+	outline: 0;
+	padding: 10px;
+	border-radius: 50px;
+}
+.button:hover {
+	cursor: pointer;
+}
+.button.primary {
+	background-color: var(--textPrimary);
+	color: #FFF;
+	border: 0;
+	padding: 1rem;
+}
+.button.light {
+	background-color: transparent;
+	border: 0;
+}
+.button.white {
+	background-color: #FFF;
+	border: 1px solid var(--textPrimary);
+}
+.panel {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.3);
+}
+.panel .panel-head,
+.panel .panel-body {
+	padding: 1rem 2rem;
+}
+.panel .panel-head {
+	display: grid;
+	align-items: center;
+	background-color: var(--textContrast);
+	border-radius: 8px 8px 0px 0px;
+}
+.pointer {
+	cursor: pointer;
+}
+
+/*#################### HTML Element Resets ####################*/
+ul {
+	list-style-type: none;
+}
+a {
+	color: var(--textPrimary);
+}
+
+/*#################### Padding ####################*/
+.safe-padding {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+/*#################### Max width ####################*/
+.max {
+	max-width: var(--bpXlarge);
+	margin: 0px auto;
+}
+
+/*#################### Text ####################*/
+.text {
+	font-size: 1rem;
+}
+
+/* Transforms */
+.text.uppercase {
+	text-transform: uppercase;
+}
+
+/* Styles */
+.text.underline {
+	text-decoration: underline;
+}
+
+/* Weights */
+.text.regular {
+	font-weight: 400;
+}
+.text.bold {
+	font-weight: 900;
+}
+
+/* Sizes */
+.text.small {
+	font-size: .7rem;
+}
+.text.large {
+	font-size: 2rem;
+}
+.text.xlarge {
+	font-size: 4rem;
+}
+
+/* Alignment */
+.text.center {
+	text-align: center;
+}
+.text.left {
+	text-align: left;
+}
+.text.right {
+	text-align: right;
+}
+
+/* Color */
+.text.primary {
+	color: var(--textPrimary);
+}
+.text.contrast {
+	color: var(--textContrast);
+}
+.text.error {
+	color: var(--textError);
+}
+.text.light {
+	color: var(--textLight); 
+}
+.text.white {
+	color: #FFF; 
+}
+
+
+/*#################### Utility ####################*/
+.opacity-5 {
+	opacity: .5;
+}
+
+.loading .load-me {
+	opacity: .4;
+}
